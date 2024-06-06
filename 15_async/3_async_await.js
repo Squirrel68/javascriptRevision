@@ -1,7 +1,3 @@
-// async await giúp promises code trở nên dễ đọc hơn
-// async khiến 1 function trả về một promise
-// await chỉ có thể được sử dụng bên trong async function, await khiến 1 hàm async đợi cho đến khi promise được resolved hoặc rejected
-
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -15,4 +11,5 @@ async function run() {
   console.log(3);
 }
 
+// console.log(typeof run);
 run();

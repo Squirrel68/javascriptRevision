@@ -239,6 +239,34 @@ then 1 return gì thì then 2 có thể nhận được giá trị đó
 -   then return 1 Promise thì then tiếp theo sẽ chờ Promise đó resolve
 ```
 
+#### 15.3. Async/Await
+
+```
+async await giúp promises code trở nên dễ đọc hơn
+  - async khiến 1 function trả về một promise
+  - await chỉ có thể được sử dụng bên trong async function, await khiến 1 hàm async đợi cho đến khi promise được resolved hoặc rejected
+
+```
+
+```
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function run() {
+  await sleep(1000);
+  console.log(1);
+  await sleep(1000);
+  console.log(2);
+  await sleep(1000);
+  console.log(3);
+}
+
+run();
+// thêm async vào function run để chuyển nó thành 1 async function, để có thể sử dụng await bên trong nó
+// hàm async run sẽ chạy tuần tự, chờ hàm sleep resolve mới chạy tiếp
+```
+
 ### 16. ECMAScript 6, 2016, 2017
 
 #### 16.1. let, const, var - DONE - 4_variables.js
