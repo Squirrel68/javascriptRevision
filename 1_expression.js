@@ -1,8 +1,6 @@
-// 1 biểu thức là sự kết hợp của các toán hạng và toán tử mà ngôn ngữ lập trình có thể diễn giài và tính toán để ra 1 giá trị nào đó:
-// Toán hạng (operand)
-// Toán tử (operator):  1 số kiểu
 let operand1 = 10;
 let operand2 = 5;
+
 // 1. Toán tử số học (Arithmetic Operators)
 let sum = operand1 + operand2;
 let sub = operand1 - operand2;
