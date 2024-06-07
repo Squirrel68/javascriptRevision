@@ -133,7 +133,7 @@ template strings = template literals
 ### 12. Semicolons
 
 ```
-Dấu chấm phẩy trong JavaScript được sử dụng để phân tách các câu lệnh trong chương trình JavaScript.
+Dấu chấm phẩy trong JavaScript được sử dụng để phân tách các câu lệnh (mệnh đề - statement) trong chương trình JavaScript.
 ```
 
 ### 13. Strict Mode
@@ -154,7 +154,7 @@ Dấu chấm phẩy trong JavaScript được sử dụng để phân tách các
 
 ```
 Callback là một hàm được truyền vào một hàm khác như một tham số. Kỹ thuật này cho phép 1 hàm gọi lại hàm khác.
-1 hàm callback có thể chạy sau khi hàm khác đã hoàn thành.
+Hàm được truyền vào (callback function) sẽ được gọi sau khi hàm bên ngoài (containing function) đã hoàn thành.
 ```
 
 Khi chưa có call back
