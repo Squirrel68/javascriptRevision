@@ -184,6 +184,8 @@ Khi có callback
     myCalculator(5, 5, myDisplayer);
     // myDisplayer là hàm callback, được truyền vào myCalculator() như một tham số, và được gọi, thực thi sau khi myCalculator() đã hoàn thành.
 
+    ==> Hàm được truyền vào (callback function) sẽ được gọi sau khi hàm bên ngoài (containing function) đã hoàn thành.
+
 ### 15. Async
 
 - asynchronous: các hàm chạy SONG SONG, không chờ hàm khác chạy xong mới chạy gọi là hàm bất đồng bộ. VD như setTimeout(), setInterval(), fetch(), XMLHttpRequest(), file reading, request animation frame, etc.
@@ -194,6 +196,8 @@ Khi có callback
   Để giải quyết vấn đề này, ta sử dụng Promise.
 
 #### 15.1. Callback Hell
+
+hàm bên ngoài chạy xong mới chạy hàm bên trong. Hàm bên trong phải đợi hàm bên ngoài chạy xong mới chạy.
 
 ```
 setTimeout(function () {
