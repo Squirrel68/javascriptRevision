@@ -152,9 +152,17 @@ Dấu chấm phẩy trong JavaScript được sử dụng để phân tách các
 
 ### 14. Callback
 
+[Tips JS: tìm hiểu về event loop, call back, promise, async, await ](https://www.youtube.com/watch?v=HhWDDG52M1E)
+[Lydia Hallie - Event Loop](https://www.youtube.com/watch?v=eiC58R16hb8&t=51s)
+
 ```
 Callback là một hàm được truyền vào một hàm khác như một tham số. Kỹ thuật này cho phép 1 hàm gọi lại hàm khác.
 Hàm được truyền vào (callback function) sẽ được gọi sau khi hàm bên ngoài (containing function) đã hoàn thành.
+- Muốn hiểu thêm về callback, cần tìm hiểu về event loop, call stack, callback queue, web APIs
+  + mỗi tác vụ sẽ đc đưa vào stack (LIFO)
+  + Những hàm bất đồng bộ sẽ đc đưa vào Queue (FIFO)
+  + Event loop sẽ kiểm tra xem stack có rỗng không, nếu rỗng thì sẽ lấy hàm từ queue đưa vào stack
+
 ```
 
 Khi chưa có call back
@@ -283,7 +291,20 @@ run();
 
 #### 16.5. destructuring
 
+```
+- Destructuring là cú pháp cho phép chúng ta trích xuất các giá trị từ các mảng hoặc các đối tượng
+- Dùng rest parameter trong destructuring để lấy phần còn lại của mảng
+```
+
 #### 16.6. spread
+
+```
+- Spread operator giúp chúng ta sao chép các phần tử của mảng hoặc các thuộc tính của object ra một mảng hoặc object mới
+
+- Rest parameter != Spread operator
+    + Rest parameter: gom các phần tử thành 1 mảng, có []
+    + Spread operator: phân rã mảng thành các phần tử, không có []
+```
 
 #### 16.7. tagged template literals
 
