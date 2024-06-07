@@ -317,6 +317,8 @@ run();
 #### 16.11. modules import/export
 
 ```
-1 module chỉ có thể export default 1 lần và export nhiều lần
+- dùng module.exports để export 1 module và require để import module thì không cần phải khai báo script type="module" trong file html
+- dùng export để export 1 module và import để import module thì cần phải khai báo script type="module" trong file html
+- 1 module chỉ có thể export default 1 lần và export nhiều lần
 export cái gì ra thì import cái đó vào
 ```
