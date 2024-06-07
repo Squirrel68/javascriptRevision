@@ -11,5 +11,6 @@ async function run() {
   console.log(3);
 }
 
+// nếu ko có await cả 3 dòng log sẽ chạy đồng thời
 // console.log(typeof run);
 run();
